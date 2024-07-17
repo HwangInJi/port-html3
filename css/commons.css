@@ -11,12 +11,6 @@ body {
   background-color: #000;
 }
 
-#wrap {
-  width: 100%;
-  height: inherit;
-  position: relative;
-}
-
 li {
   list-style: none;
 }
