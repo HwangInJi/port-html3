@@ -719,28 +719,43 @@
         ); // 속도 조절
       });
 
-      // 02.
+      // 02. ABOUT ME 이미지 hover 영역
       document.addEventListener("DOMContentLoaded", () => {
+        // DOM이 완전히 로드된 후 스크립트 실행
+
         const lineBoxes = document.querySelectorAll("#section2 .lineBox");
+        // section2 내의 모든 lineBox 요소를 선택
 
         lineBoxes.forEach((box) => {
+          // 각 lineBox에 대해 반복
+
           const hoverImage = box.querySelector(".hover-image");
+          // 현재 lineBox 내의 hover-image 요소를 선택
 
           box.addEventListener("mouseenter", () => {
+            // 마우스가 lineBox에 진입할 때 이벤트 리스너
             hoverImage.style.opacity = "1";
+            // 이미지를 완전히 불투명하게 만들어 표시
           });
 
           box.addEventListener("mouseleave", () => {
+            // 마우스가 lineBox를 벗어날 때 이벤트 리스너
             hoverImage.style.opacity = "0";
+            // 이미지를 완전히 투명하게 만들어 숨김
           });
 
           box.addEventListener("mousemove", (e) => {
+            // 마우스가 lineBox 내에서 움직일 때 이벤트 리스너
             const rect = box.getBoundingClientRect();
+            // lineBox의 위치와 크기 정보를 가져옴
+
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
+            // 마우스의 lineBox 내 상대적 위치 계산
 
             hoverImage.style.left = `${x}px`;
             hoverImage.style.top = `${y}px`;
+            // 이미지의 위치를 마우스 위치로 업데이트
           });
         });
       });
