@@ -161,27 +161,40 @@
   }
 }
 
-#section2 .about .desc .lineBox,
-#section5 .port .desc .lineBox {
+#section2 .about .desc .lineBox {
   min-width: 24%;
   box-sizing: border-box;
   height: 200px;
+  position: relative;
+  cursor: none;
 }
 
-#section2 .lineBox:nth-child(1):hover {
-  cursor: url("/img/about-img1.svg") 54 54, auto;
+.hover-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25vw;
+  height: 25vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* 이미지가 마우스 이벤트를 방해하지 않도록 */
 }
 
-#section2 .lineBox:nth-child(2):hover {
-  cursor: url("/img/about-img2.svg") 54 54, auto;
+#section2 .lineBox:nth-child(1) .hover-image {
+  background-image: url("/img/about-img1.svg");
 }
-
-#section2 .lineBox:nth-child(3):hover {
-  cursor: url("/img/about-img3.svg") 54 54, auto;
+#section2 .lineBox:nth-child(2) .hover-image {
+  background-image: url("/img/about-img2.svg");
 }
-
-#section2 .lineBox:nth-child(4):hover {
-  cursor: url("/img/about-img4.svg") 54 54, auto;
+#section2 .lineBox:nth-child(3) .hover-image {
+  background-image: url("/img/about-img3.svg");
+}
+#section2 .lineBox:nth-child(4) .hover-image {
+  background-image: url("/img/about-img4.svg");
 }
 
 #section2 .about .desc .text,
@@ -235,6 +248,13 @@
 #section2 .about .desc .text p {
   font-family: var(--fontI);
   font-size: 14px;
+}
+
+#section5 .port .desc .lineBox {
+  min-width: 24%;
+  box-sizing: border-box;
+  height: 200px;
+  position: relative;
 }
 
 #section5 .port .desc .lineBox .text .port_text1 {
@@ -698,7 +718,7 @@
   left: 8px;
   top: 4px;
   transform: rotate(45deg);
-  border-left: 2px solid #fff;
+  border-left: 1px solid #fff;
 }
 .lineBox4 .line4 span:nth-child(1)::before {
   content: "";
@@ -717,7 +737,7 @@
   height: 1px;
   background-color: #fff;
   position: absolute;
-  left: -2px;
+  left: -1px;
   top: 0;
   transform: rotate(-45deg);
   transform-origin: top left;
@@ -730,7 +750,7 @@
   right: 8px;
   top: 3px;
   transform: rotate(45deg);
-  border-top: 2px solid #fff;
+  border-top: 1px solid #fff;
 }
 .lineBox4 .line4 span:nth-child(2)::before {
   content: "";
@@ -760,7 +780,7 @@
   left: 9px;
   bottom: 4px;
   transform: rotate(45deg);
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 .lineBox4 .line4 span:nth-child(3)::before {
   content: "";
@@ -790,7 +810,7 @@
   right: 9px;
   bottom: 4px;
   transform: rotate(-45deg);
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 .lineBox4 .line4 span:nth-child(4)::before {
   content: "";
@@ -844,7 +864,7 @@
   left: 8px;
   top: 4px;
   transform: rotate(45deg);
-  border-left: 2px solid #fff;
+  border-left: 1px solid #fff;
 }
 .lineBox3 .line3 span:nth-child(1)::before {
   content: "";
@@ -863,7 +883,7 @@
   height: 1px;
   background-color: #fff;
   position: absolute;
-  left: -2px;
+  left: -1px;
   top: 0;
   transform: rotate(-45deg);
   transform-origin: top left;
@@ -876,7 +896,7 @@
   right: 8px;
   top: 4px;
   transform: rotate(45deg);
-  border-top: 2px solid #fff;
+  border-top: 1px solid #fff;
 }
 .lineBox3 .line3 span:nth-child(2)::before {
   content: "";
@@ -906,7 +926,7 @@
   left: 9px;
   bottom: 4px;
   transform: rotate(45deg);
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 .lineBox3 .line3 span:nth-child(3)::before {
   content: "";
@@ -936,7 +956,7 @@
   right: 9px;
   bottom: 4px;
   transform: rotate(-45deg);
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 .lineBox3 .line3 span:nth-child(4)::before {
   content: "";
