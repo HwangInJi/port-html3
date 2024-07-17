@@ -46,27 +46,6 @@
         margin-top: -1.5rem;
       }
     }
-
-    .top_msg {
-      align-items: center;
-      overflow: hidden;
-
-      .top_line1,
-      .top_line2 {
-        width: 100%;
-        height: 100%;
-      }
-
-      .top_msgP {
-        font-size: 1.5rem;
-        color: #fff;
-        line-height: 1;
-        text-align: center;
-        margin-top: -0.625rem;
-        padding: 0 2rem;
-      }
-    }
-
     .top_deco {
       .top_decoimg {
         width: 3.5rem;
@@ -80,7 +59,7 @@
       padding: 0.8rem 2.5rem;
       background-color: #ececec;
       border-radius: 50px;
-      margin-top: -0.625rem;
+      margin-top: -1rem;
       .menu_btn {
         font-size: 1.5rem;
         text-align: center;
@@ -184,7 +163,7 @@
 
 #section2 .about .desc .lineBox,
 #section5 .port .desc .lineBox {
-  min-width: 24%; 
+  min-width: 24%;
   box-sizing: border-box;
   height: 200px;
 }
@@ -697,7 +676,299 @@
 
 /* section5 - 포트폴리오 요약소개 */
 
+/* 작은 라인박스 + 초록색 네모 */
+.lineBox4 {
+  width: 4vw;
+  height: 6vh;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.lineBox4 .line4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.lineBox4 .line4 span:nth-child(1) {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  transform: rotate(45deg);
+  border-left: 2px solid #fff;
+}
+.lineBox4 .line4 span:nth-child(1)::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+.lineBox4 .line4 span:nth-child(1)::after {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: -2px;
+  top: 0;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+}
+
+.lineBox4 .line4 span:nth-child(2) {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 8px;
+  top: 3px;
+  transform: rotate(45deg);
+  border-top: 2px solid #fff;
+}
+.lineBox4 .line4 span:nth-child(2)::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  right: 7px;
+  top: 4px;
+  transform: rotate(-45deg);
+}
+.lineBox4 .line4 span:nth-child(2)::after {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  right: -12px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+
+.lineBox4 .line4 span:nth-child(3) {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 9px;
+  bottom: 4px;
+  transform: rotate(45deg);
+  border-bottom: 2px solid #fff;
+}
+.lineBox4 .line4 span:nth-child(3)::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: -12px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+.lineBox4 .line4 span:nth-child(3)::after {
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  right: -5px;
+  top: -3px;
+  transform: rotate(45deg);
+}
+
+.lineBox4 .line4 span:nth-child(4) {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 9px;
+  bottom: 4px;
+  transform: rotate(-45deg);
+  border-bottom: 2px solid #fff;
+}
+.lineBox4 .line4 span:nth-child(4)::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  right: 7px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+.lineBox4 .line4 span:nth-child(4)::after {
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  right: -5px;
+  top: -3px;
+  transform: rotate(45deg);
+}
+
+.lineBox4 .line4 .square {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--mainColor);
+  position: absolute;
+  right: 22px;
+  top: 15px;
+}
+
 /* 작은 라인박스 */
+.lineBox3 {
+  width: 30vw;
+  height: 6vh;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.lineBox3 .line3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.lineBox3 .line3 span:nth-child(1) {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  transform: rotate(45deg);
+  border-left: 2px solid #fff;
+}
+.lineBox3 .line3 span:nth-child(1)::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+.lineBox3 .line3 span:nth-child(1)::after {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: -2px;
+  top: 0;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+}
+
+.lineBox3 .line3 span:nth-child(2) {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  transform: rotate(45deg);
+  border-top: 2px solid #fff;
+}
+.lineBox3 .line3 span:nth-child(2)::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  right: 7px;
+  top: 4px;
+  transform: rotate(-45deg);
+}
+.lineBox3 .line3 span:nth-child(2)::after {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  right: -12px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+
+.lineBox3 .line3 span:nth-child(3) {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 9px;
+  bottom: 4px;
+  transform: rotate(45deg);
+  border-bottom: 2px solid #fff;
+}
+.lineBox3 .line3 span:nth-child(3)::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: -12px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+.lineBox3 .line3 span:nth-child(3)::after {
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  right: -5px;
+  top: -3px;
+  transform: rotate(45deg);
+}
+
+.lineBox3 .line3 span:nth-child(4) {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 9px;
+  bottom: 4px;
+  transform: rotate(-45deg);
+  border-bottom: 2px solid #fff;
+}
+.lineBox3 .line3 span:nth-child(4)::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  right: 7px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+.lineBox3 .line3 span:nth-child(4)::after {
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  right: -5px;
+  top: -3px;
+  transform: rotate(45deg);
+}
+
+.lineBox3 .line3 .top_msgP {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+/* 라인박스 */
 .lineBox {
   position: relative;
 }
@@ -850,13 +1121,13 @@
   left: -10px;
   top: 20px;
   transform: rotate(45deg);
-  border-left: 1px solid #858585;
+  border-left: 1px solid #fff;
 }
 .lineBox2 .line2 span:nth-child(1)::before {
   content: "";
   width: 100px;
   height: 1px;
-  background-color: #858585;
+  background-color: #fff;
   position: absolute;
   left: 0;
   top: 60px;
@@ -867,7 +1138,7 @@
   content: "";
   width: 100px;
   height: 1px;
-  background-color: #858585;
+  background-color: #fff;
   position: absolute;
   left: -1px;
   top: 0;
@@ -882,13 +1153,13 @@
   right: -10px;
   top: 20px;
   transform: rotate(45deg);
-  border-top: 1px solid #858585;
+  border-top: 1px solid #fff;
 }
 .lineBox2 .line2 span:nth-child(2)::before {
   content: "";
   width: 100px;
   height: 1px;
-  background-color: #858585;
+  background-color: #fff;
   position: absolute;
   right: 45px;
   top: 35px;
@@ -898,7 +1169,7 @@
   content: "";
   width: 100px;
   height: 1px;
-  background-color: #858585;
+  background-color: #fff;
   position: absolute;
   right: -85px;
   top: 35px;
@@ -912,13 +1183,13 @@
   left: -10px;
   bottom: 20px;
   transform: rotate(45deg);
-  border-bottom: 1px solid #858585;
+  border-bottom: 1px solid #fff;
 }
 .lineBox2 .line2 span:nth-child(3)::before {
   content: "";
   width: 100px;
   height: 1px;
-  background-color: #858585;
+  background-color: #fff;
   position: absolute;
   left: -85px;
   top: 23px;
@@ -928,7 +1199,7 @@
   content: "";
   width: 1px;
   height: 100px;
-  background-color: #858585;
+  background-color: #fff;
   position: absolute;
   right: -35px;
   top: -26px;
@@ -942,13 +1213,13 @@
   right: -10px;
   bottom: 20px;
   transform: rotate(-45deg);
-  border-bottom: 1px solid #858585;
+  border-bottom: 1px solid #fff;
 }
 .lineBox2 .line2 span:nth-child(4)::before {
   content: "";
   width: 100px;
   height: 1px;
-  background-color: #858585;
+  background-color: #fff;
   position: absolute;
   right: 44px;
   top: 24px;
@@ -958,7 +1229,7 @@
   content: "";
   width: 1px;
   height: 100px;
-  background-color: #858585;
+  background-color: #fff;
   position: absolute;
   right: -36px;
   top: -25px;

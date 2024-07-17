@@ -18,14 +18,27 @@
             <div class="border_line"></div>
             <p>20s</p>
           </div>
-          <div class="top_msg">
-            <img src="/img/line1.svg" alt="line" class="top_line1" />
-            <p class="top_msgP" id="marqueeText">숨겨진 단어를 찾아보세요!</p>
-            <img src="/img/line2.svg" alt="line" class="top_line2" />
+          <div class="lineBox3">
+            <div class="line3">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p class="top_msgP" id="marqueeText">숨겨진 단어를 찾아보세요!</p>
+            </div>
           </div>
-          <div class="top_deco">
+          <div class="lineBox4">
+            <div class="line4">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="square"></div>
+            </div>
+          </div>
+          <!-- <div class="top_deco">
             <img src="/img/deco.svg" alt="deco" class="top_decoimg" />
-          </div>
+          </div> -->
           <div class="top_menu">
             <button class="menu_btn">메뉴</button>
             <!-- <ul>
@@ -372,15 +385,23 @@
             <div class="border_line"></div>
             <p>20s</p>
           </div>
-          <div class="top_msg">
-            <img src="/img/line1.svg" alt="line" class="top_line1" />
-            <p class="top_msgP" id="marqueeText">
-              퀴즈를 풀면 뭐가 나타날까요?
-            </p>
-            <img src="/img/line2.svg" alt="line" class="top_line2" />
+          <div class="lineBox3">
+            <div class="line3">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p class="top_msgP" id="marqueeText">무엇이 나타날까요?</p>
+            </div>
           </div>
-          <div class="top_deco">
-            <img src="/img/deco.svg" alt="deco" class="top_decoimg" />
+          <div class="lineBox4">
+            <div class="line4">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="square"></div>
+            </div>
           </div>
           <div class="top_menu2">
             <button class="menu_btn2">인지에 대해서 알고싶다면!</button>
@@ -663,27 +684,51 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const desc = document.querySelector("#section5 .container .port .desc");
-      const lineBoxes = Array.from(document.querySelectorAll("#section5 .container .port .desc .lineBox"));
+      document.addEventListener("DOMContentLoaded", () => {
+        const desc = document.querySelector("#section5 .container .port .desc");
+        const lineBoxes = Array.from(
+          document.querySelectorAll("#section5 .container .port .desc .lineBox")
+        );
 
-      // 원래 슬라이드를 한 번 복제하고, 첫 번째 슬라이드를 한 번 더 추가
-      lineBoxes.forEach(lineBox => {
-        const clone = lineBox.cloneNode(true);
-        desc.appendChild(clone);
+        // 원래 슬라이드를 한 번 복제하고, 첫 번째 슬라이드를 한 번 더 추가
+        lineBoxes.forEach((lineBox) => {
+          const clone = lineBox.cloneNode(true);
+          desc.appendChild(clone);
+        });
+        const extraFirst = lineBoxes[0].cloneNode(true);
+        desc.appendChild(extraFirst);
+
+        desc.classList.add("slider-track");
+
+        // 원래 슬라이드의 총 너비 계산 (추가된 첫 번째 슬라이드 포함)
+        const singleSetWidth =
+          lineBoxes.reduce((sum, box) => sum + box.offsetWidth + 20, 0) +
+          lineBoxes[0].offsetWidth +
+          20; // 20은 gap
+
+        // CSS 변수 설정
+        desc.style.setProperty("--single-set-width", `${singleSetWidth}px`);
+        desc.style.setProperty(
+          "--animation-duration",
+          `${singleSetWidth / 100}s`
+        ); // 속도 조절
       });
-      const extraFirst = lineBoxes[0].cloneNode(true);
-      desc.appendChild(extraFirst);
+    </script>
 
-      desc.classList.add('slider-track');
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+      const lenis = new Lenis();
 
-      // 원래 슬라이드의 총 너비 계산 (추가된 첫 번째 슬라이드 포함)
-      const singleSetWidth = lineBoxes.reduce((sum, box) => sum + box.offsetWidth + 20, 0) + lineBoxes[0].offsetWidth + 20; // 20은 gap
-      
-      // CSS 변수 설정
-      desc.style.setProperty('--single-set-width', `${singleSetWidth}px`);
-      desc.style.setProperty('--animation-duration', `${singleSetWidth / 100}s`); // 속도 조절
-    });
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
     </script>
   </body>
 </html>
