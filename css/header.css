@@ -144,15 +144,16 @@
   display: flex;
   gap: 20px;
   position: relative;
+  width: 100%;
 }
 
 .slider-track {
   display: flex;
   gap: 20px;
-  animation: scroll var(--animation-duration) linear infinite;
+  animation: slide var(--animation-duration) linear infinite;
 }
 
-@keyframes scroll {
+@keyframes slide {
   0% {
     transform: translateX(0);
   }
@@ -258,56 +259,56 @@
 }
 
 #section5 .port .desc .lineBox .text .port_text1 {
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 10px;
   text-align: center;
   font-family: var(--fontB);
 }
 
 #section5 .port .desc .lineBox .text .port_text2 {
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 10px;
   text-align: center;
-  font-family: var(--fontL);
+  font-family: var(--fontK);
 }
 
 #section5 .port .desc .lineBox .text .port_text3 {
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 10px;
   text-align: center;
   font-family: var(--fontU);
 }
 
 #section5 .port .desc .lineBox .text .port_text4 {
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 10px;
   text-align: center;
   font-family: var(--fontC);
 }
 
 #section5 .port .desc .lineBox .text .port_text5 {
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 10px;
   text-align: center;
   font-family: var(--fontE);
 }
 
 #section5 .port .desc .lineBox .text .port_text6 {
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 10px;
   text-align: center;
   font-family: var(--fontY);
 }
 
 #section5 .port .desc .lineBox .text .port_text7 {
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 10px;
   text-align: center;
   font-family: var(--fontS);
 }
 
 #section5 .port .desc .lineBox .text .port_text8 {
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 10px;
   text-align: center;
   font-family: var(--fontM);
@@ -317,15 +318,33 @@
   .textWrap ul {
     width: 1890px;
   }
-  .textWrap ul li.t1-28,
-  .textWrap ul li.t2-28,
-  .textWrap ul li.t3-28,
-  .textWrap ul li.t4-28,
-  .textWrap ul li.t5-28,
-  .textWrap ul li.t6-28,
-  .textWrap ul li.t7-28,
-  .textWrap ul li.t8-28,
-  .textWrap ul li.t9-28 {
+  .textWrap ul li.t1-35,
+  .textWrap ul li.t2-35,
+  .textWrap ul li.t3-35,
+  .textWrap ul li.t4-35,
+  .textWrap ul li.t5-35,
+  .textWrap ul li.t6-35,
+  .textWrap ul li.t7-35,
+  .textWrap ul li.t8-35,
+  .textWrap ul li.t9-35,
+  .textWrap ul li.t1-34,
+  .textWrap ul li.t2-34,
+  .textWrap ul li.t3-34,
+  .textWrap ul li.t4-34,
+  .textWrap ul li.t5-34,
+  .textWrap ul li.t6-34,
+  .textWrap ul li.t7-34,
+  .textWrap ul li.t8-34,
+  .textWrap ul li.t9-34,
+  .textWrap ul li.t1-33,
+  .textWrap ul li.t2-33,
+  .textWrap ul li.t3-33,
+  .textWrap ul li.t4-33,
+  .textWrap ul li.t5-33,
+  .textWrap ul li.t6-33,
+  .textWrap ul li.t7-33,
+  .textWrap ul li.t8-33,
+  .textWrap ul li.t9-33 {
     display: none;
   }
 }
@@ -334,6 +353,59 @@
   .textWrap ul {
     width: 1820px;
   }
+  .textWrap ul li.t1-32,
+  .textWrap ul li.t2-32,
+  .textWrap ul li.t3-32,
+  .textWrap ul li.t4-32,
+  .textWrap ul li.t5-32,
+  .textWrap ul li.t6-32,
+  .textWrap ul li.t7-32,
+  .textWrap ul li.t8-32,
+  .textWrap ul li.t9-32,
+  .textWrap ul li.t1-31,
+  .textWrap ul li.t2-31,
+  .textWrap ul li.t3-31,
+  .textWrap ul li.t4-31,
+  .textWrap ul li.t5-31,
+  .textWrap ul li.t6-31,
+  .textWrap ul li.t7-31,
+  .textWrap ul li.t8-31,
+  .textWrap ul li.t9-31,
+  .textWrap ul li.t1-30,
+  .textWrap ul li.t2-30,
+  .textWrap ul li.t3-30,
+  .textWrap ul li.t4-30,
+  .textWrap ul li.t5-30,
+  .textWrap ul li.t6-30,
+  .textWrap ul li.t7-30,
+  .textWrap ul li.t8-30,
+  .textWrap ul li.t9-30 {
+    display: none;
+  }
+}
+
+@media (max-width: 1930px) {
+  .textWrap ul {
+    width: 1750px;
+  }
+  .textWrap ul li.t1-29,
+  .textWrap ul li.t2-29,
+  .textWrap ul li.t3-29,
+  .textWrap ul li.t4-29,
+  .textWrap ul li.t5-29,
+  .textWrap ul li.t6-29,
+  .textWrap ul li.t7-29,
+  .textWrap ul li.t8-29,
+  .textWrap ul li.t9-29,
+  .textWrap ul li.t1-28,
+  .textWrap ul li.t2-28,
+  .textWrap ul li.t3-28,
+  .textWrap ul li.t4-28,
+  .textWrap ul li.t5-28,
+  .textWrap ul li.t6-28,
+  .textWrap ul li.t7-28,
+  .textWrap ul li.t8-28,
+  .textWrap ul li.t9-28,
   .textWrap ul li.t1-27,
   .textWrap ul li.t2-27,
   .textWrap ul li.t3-27,
@@ -347,9 +419,9 @@
   }
 }
 
-@media (max-width: 1930px) {
+@media (max-width: 1860px) {
   .textWrap ul {
-    width: 1750px;
+    width: 1680px;
   }
   .textWrap ul li.t1-26,
   .textWrap ul li.t2-26,
@@ -359,15 +431,7 @@
   .textWrap ul li.t6-26,
   .textWrap ul li.t7-26,
   .textWrap ul li.t8-26,
-  .textWrap ul li.t9-26 {
-    display: none;
-  }
-}
-
-@media (max-width: 1860px) {
-  .textWrap ul {
-    width: 1680px;
-  }
+  .textWrap ul li.t9-26,
   .textWrap ul li.t1-25,
   .textWrap ul li.t2-25,
   .textWrap ul li.t3-25,
@@ -393,15 +457,7 @@
   .textWrap ul li.t6-24,
   .textWrap ul li.t7-24,
   .textWrap ul li.t8-24,
-  .textWrap ul li.t9-24 {
-    display: none;
-  }
-}
-
-@media (max-width: 1710px) {
-  .textWrap ul {
-    width: 1540px;
-  }
+  .textWrap ul li.t9-24,
   .textWrap ul li.t1-23,
   .textWrap ul li.t2-23,
   .textWrap ul li.t3-23,
@@ -415,19 +471,36 @@
   }
 }
 
+/* @media (max-width: 1710px) {
+  .textWrap ul {
+    width: 1540px;
+  }
+  .textWrap ul li.t1-30,
+  .textWrap ul li.t2-30,
+  .textWrap ul li.t3-30,
+  .textWrap ul li.t4-30,
+  .textWrap ul li.t5-30,
+  .textWrap ul li.t6-30,
+  .textWrap ul li.t7-30,
+  .textWrap ul li.t8-30,
+  .textWrap ul li.t9-30 {
+    display: none;
+  }
+}
+
 @media (max-width: 1640px) {
   .textWrap ul {
     width: 1470px;
   }
-  .textWrap ul li.t1-22,
-  .textWrap ul li.t2-22,
-  .textWrap ul li.t3-22,
-  .textWrap ul li.t4-22,
-  .textWrap ul li.t5-22,
-  .textWrap ul li.t6-22,
-  .textWrap ul li.t7-22,
-  .textWrap ul li.t8-22,
-  .textWrap ul li.t9-22 {
+  .textWrap ul li.t1-29,
+  .textWrap ul li.t2-29,
+  .textWrap ul li.t3-29,
+  .textWrap ul li.t4-29,
+  .textWrap ul li.t5-29,
+  .textWrap ul li.t6-29,
+  .textWrap ul li.t7-29,
+  .textWrap ul li.t8-29,
+  .textWrap ul li.t9-29 {
     display: none;
   }
 }
@@ -436,15 +509,15 @@
   .textWrap ul {
     width: 1400px;
   }
-  .textWrap ul li.t1-21,
-  .textWrap ul li.t2-21,
-  .textWrap ul li.t3-21,
-  .textWrap ul li.t4-21,
-  .textWrap ul li.t5-21,
-  .textWrap ul li.t6-21,
-  .textWrap ul li.t7-21,
-  .textWrap ul li.t8-21,
-  .textWrap ul li.t9-21 {
+  .textWrap ul li.t1-28,
+  .textWrap ul li.t2-28,
+  .textWrap ul li.t3-28,
+  .textWrap ul li.t4-28,
+  .textWrap ul li.t5-28,
+  .textWrap ul li.t6-28,
+  .textWrap ul li.t7-28,
+  .textWrap ul li.t8-28,
+  .textWrap ul li.t9-28 {
     display: none;
   }
 }
@@ -453,15 +526,15 @@
   .textWrap ul {
     width: 1330px;
   }
-  .textWrap ul li.t1-20,
-  .textWrap ul li.t2-20,
-  .textWrap ul li.t3-20,
-  .textWrap ul li.t4-20,
-  .textWrap ul li.t5-20,
-  .textWrap ul li.t6-20,
-  .textWrap ul li.t7-20,
-  .textWrap ul li.t8-20,
-  .textWrap ul li.t9-20 {
+  .textWrap ul li.t1-27,
+  .textWrap ul li.t2-27,
+  .textWrap ul li.t3-27,
+  .textWrap ul li.t4-27,
+  .textWrap ul li.t5-27,
+  .textWrap ul li.t6-27,
+  .textWrap ul li.t7-27,
+  .textWrap ul li.t8-27,
+  .textWrap ul li.t9-27 {
     display: none;
   }
 }
@@ -470,15 +543,15 @@
   .textWrap ul {
     width: 1260px;
   }
-  .textWrap ul li.t1-19,
-  .textWrap ul li.t2-19,
-  .textWrap ul li.t3-19,
-  .textWrap ul li.t4-19,
-  .textWrap ul li.t5-19,
-  .textWrap ul li.t6-19,
-  .textWrap ul li.t7-19,
-  .textWrap ul li.t8-19,
-  .textWrap ul li.t9-19 {
+  .textWrap ul li.t1-26,
+  .textWrap ul li.t2-26,
+  .textWrap ul li.t3-26,
+  .textWrap ul li.t4-26,
+  .textWrap ul li.t5-26,
+  .textWrap ul li.t6-26,
+  .textWrap ul li.t7-26,
+  .textWrap ul li.t8-26,
+  .textWrap ul li.t9-26 {
     display: none;
   }
 }
@@ -487,15 +560,15 @@
   .textWrap ul {
     width: 1190px;
   }
-  .textWrap ul li.t1-18,
-  .textWrap ul li.t2-18,
-  .textWrap ul li.t3-18,
-  .textWrap ul li.t4-18,
-  .textWrap ul li.t5-18,
-  .textWrap ul li.t6-18,
-  .textWrap ul li.t7-18,
-  .textWrap ul li.t8-18,
-  .textWrap ul li.t9-18 {
+  .textWrap ul li.t1-25,
+  .textWrap ul li.t2-25,
+  .textWrap ul li.t3-25,
+  .textWrap ul li.t4-25,
+  .textWrap ul li.t5-25,
+  .textWrap ul li.t6-25,
+  .textWrap ul li.t7-25,
+  .textWrap ul li.t8-25,
+  .textWrap ul li.t9-25 {
     display: none;
   }
 }
@@ -504,19 +577,20 @@
   .textWrap ul {
     width: 1120px;
   }
-  .textWrap ul li.t1-17,
-  .textWrap ul li.t2-17,
-  .textWrap ul li.t3-17,
-  .textWrap ul li.t4-17,
-  .textWrap ul li.t5-17,
-  .textWrap ul li.t6-17,
-  .textWrap ul li.t7-17,
-  .textWrap ul li.t8-17,
-  .textWrap ul li.t9-17 {
+  .textWrap ul li.t1-24,
+  .textWrap ul li.t2-24,
+  .textWrap ul li.t3-24,
+  .textWrap ul li.t4-24,
+  .textWrap ul li.t5-24,
+  .textWrap ul li.t6-24,
+  .textWrap ul li.t7-24,
+  .textWrap ul li.t8-24,
+  .textWrap ul li.t9-24 {
     display: none;
   }
-}
+} */
 
+/* H */
 .textWrap ul li.t1-1,
 .textWrap ul li.t2-1,
 .textWrap ul li.t3-1,
@@ -537,7 +611,13 @@
 .textWrap ul li.t5-7,
 .textWrap ul li.t6-7,
 .textWrap ul li.t7-7,
-.textWrap ul li.t8-7,
+.textWrap ul li.t8-7 {
+  color: #8cf4a1;
+  text-shadow: -1px 0 0 #8cf4a1, 0 -1px 0 #8cf4a1, 1px 0 0 #8cf4a1,
+    0 1px 0 #8cf4a1;
+}
+
+/* E */
 .textWrap ul li.t1-9,
 .textWrap ul li.t2-9,
 .textWrap ul li.t3-9,
@@ -563,7 +643,13 @@
 .textWrap ul li.t8-12,
 .textWrap ul li.t8-13,
 .textWrap ul li.t8-14,
-.textWrap ul li.t8-15,
+.textWrap ul li.t8-15 {
+  color: #8cf4a1;
+  text-shadow: -1px 0 0 #8cf4a1, 0 -1px 0 #8cf4a1, 1px 0 0 #8cf4a1,
+    0 1px 0 #8cf4a1;
+}
+
+/* L */
 .textWrap ul li.t1-17,
 .textWrap ul li.t2-17,
 .textWrap ul li.t3-17,
@@ -577,7 +663,13 @@
 .textWrap ul li.t8-19,
 .textWrap ul li.t8-20,
 .textWrap ul li.t8-21,
-.textWrap ul li.t8-22,
+.textWrap ul li.t8-22 {
+  color: #8cf4a1;
+  text-shadow: -1px 0 0 #8cf4a1, 0 -1px 0 #8cf4a1, 1px 0 0 #8cf4a1,
+    0 1px 0 #8cf4a1;
+}
+
+/* L */
 .textWrap ul li.t1-24,
 .textWrap ul li.t2-24,
 .textWrap ul li.t3-24,
@@ -586,11 +678,13 @@
 .textWrap ul li.t6-24,
 .textWrap ul li.t7-24,
 .textWrap ul li.t8-24,
-.textWrap ul li.t8-24,
 .textWrap ul li.t8-25,
 .textWrap ul li.t8-26,
 .textWrap ul li.t8-27,
-.textWrap ul li.t8-28 {
+.textWrap ul li.t8-28,
+.textWrap ul li.t1-26,
+.textWrap ul li.t1-27,
+.textWrap ul li.t1-28 {
   color: #8cf4a1;
   text-shadow: -1px 0 0 #8cf4a1, 0 -1px 0 #8cf4a1, 1px 0 0 #8cf4a1,
     0 1px 0 #8cf4a1;
@@ -692,6 +786,65 @@
   color: #8cf4a1;
   text-shadow: -1px 0 0 #8cf4a1, 0 -1px 0 #8cf4a1, 1px 0 0 #8cf4a1,
     0 1px 0 #8cf4a1;
+}
+
+@media (max-width: 1600px) {
+  #section3 .header.container .header_top .lineBox3 {
+    width: 20vw;
+  }
+
+  #section3 .header.container .header_top .lineBox4 {
+    width: 4.6vw;
+  }
+
+  #section3 .header.container .header_top .top_menu2 {
+    width: 20vw;
+  }
+
+  #section4 {
+    display: block;
+    height: 200vh;
+  }
+
+  #section4 .lineBox2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section4 .lineBox2 .line2 {
+    position: relative;
+    width: 97%;
+  }
+
+  #section4 .lineBox2 .line2 span:nth-child(3),
+  #section4 .lineBox2 .line2 span:nth-child(4) {
+    bottom: 110px;
+  }
+
+  #section4 .puzzle_right {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  #section4 .puzzle_right .textWrap2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .textWrap2 ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .textWrap2 ul li {
+    width: auto; /* 또는 필요에 따라 조정 */
+  }
 }
 
 /* section5 - 포트폴리오 요약소개 */

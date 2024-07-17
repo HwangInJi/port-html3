@@ -81,6 +81,13 @@
             <li class="t1-26">e</li>
             <li class="t1-27">e</li>
             <li class="t1-28">e</li>
+            <li class="t1-29">A</li>
+            <li class="t1-30">o</li>
+            <li class="t1-31">m</li>
+            <li class="t1-32">e</li>
+            <li class="t1-33">e</li>
+            <li class="t1-34">e</li>
+            <li class="t1-35">e</li>
           </ul>
           <ul>
             <li class="t2-1">w</li>
@@ -111,6 +118,13 @@
             <li class="t2-26">e</li>
             <li class="t2-27">e</li>
             <li class="t2-28">e</li>
+            <li class="t2-29">A</li>
+            <li class="t2-30">o</li>
+            <li class="t2-31">m</li>
+            <li class="t2-32">e</li>
+            <li class="t2-33">e</li>
+            <li class="t2-34">e</li>
+            <li class="t2-35">e</li>
           </ul>
           <ul>
             <li class="t3-1">w</li>
@@ -141,6 +155,13 @@
             <li class="t3-26">e</li>
             <li class="t3-27">e</li>
             <li class="t3-28">e</li>
+            <li class="t3-29">A</li>
+            <li class="t3-30">o</li>
+            <li class="t3-31">m</li>
+            <li class="t3-32">e</li>
+            <li class="t3-33">e</li>
+            <li class="t3-34">e</li>
+            <li class="t3-35">e</li>
           </ul>
           <ul>
             <li class="t4-1">w</li>
@@ -171,6 +192,13 @@
             <li class="t4-26">e</li>
             <li class="t4-27">e</li>
             <li class="t4-28">e</li>
+            <li class="t4-29">A</li>
+            <li class="t4-30">o</li>
+            <li class="t4-31">m</li>
+            <li class="t4-32">e</li>
+            <li class="t4-33">e</li>
+            <li class="t4-34">e</li>
+            <li class="t4-35">e</li>
           </ul>
           <ul>
             <li class="t5-1">w</li>
@@ -201,6 +229,13 @@
             <li class="t5-26">e</li>
             <li class="t5-27">e</li>
             <li class="t5-28">e</li>
+            <li class="t5-29">A</li>
+            <li class="t5-30">o</li>
+            <li class="t5-31">m</li>
+            <li class="t5-32">e</li>
+            <li class="t5-33">e</li>
+            <li class="t5-34">e</li>
+            <li class="t5-35">e</li>
           </ul>
           <ul>
             <li class="t6-1">w</li>
@@ -231,6 +266,13 @@
             <li class="t6-26">e</li>
             <li class="t6-27">e</li>
             <li class="t6-28">e</li>
+            <li class="t6-29">A</li>
+            <li class="t6-30">o</li>
+            <li class="t6-31">m</li>
+            <li class="t6-32">e</li>
+            <li class="t6-33">e</li>
+            <li class="t6-34">e</li>
+            <li class="t6-35">e</li>
           </ul>
           <ul>
             <li class="t7-1">w</li>
@@ -261,6 +303,13 @@
             <li class="t7-26">e</li>
             <li class="t7-27">e</li>
             <li class="t7-28">e</li>
+            <li class="t7-29">A</li>
+            <li class="t7-30">o</li>
+            <li class="t7-31">m</li>
+            <li class="t7-32">e</li>
+            <li class="t7-33">e</li>
+            <li class="t7-34">e</li>
+            <li class="t7-35">e</li>
           </ul>
           <ul>
             <li class="t8-1">w</li>
@@ -291,6 +340,13 @@
             <li class="t8-26">e</li>
             <li class="t8-27">e</li>
             <li class="t8-28">e</li>
+            <li class="t8-29">A</li>
+            <li class="t8-30">o</li>
+            <li class="t8-31">m</li>
+            <li class="t8-32">e</li>
+            <li class="t8-33">e</li>
+            <li class="t8-34">e</li>
+            <li class="t8-35">e</li>
           </ul>
         </div>
       </section>
@@ -695,27 +751,25 @@
           document.querySelectorAll("#section5 .container .port .desc .lineBox")
         );
 
-        // 원래 슬라이드를 한 번 복제하고, 첫 번째 슬라이드를 한 번 더 추가
+        // 원래 슬라이드를 한 번 복제
         lineBoxes.forEach((lineBox) => {
           const clone = lineBox.cloneNode(true);
           desc.appendChild(clone);
         });
-        const extraFirst = lineBoxes[0].cloneNode(true);
-        desc.appendChild(extraFirst);
 
         desc.classList.add("slider-track");
 
-        // 원래 슬라이드의 총 너비 계산 (추가된 첫 번째 슬라이드 포함)
-        const singleSetWidth =
-          lineBoxes.reduce((sum, box) => sum + box.offsetWidth + 20, 0) +
-          lineBoxes[0].offsetWidth +
-          20; // 20은 gap
+        // 원래 슬라이드의 총 너비 계산
+        const singleSetWidth = lineBoxes.reduce(
+          (sum, box) => sum + box.offsetWidth + 20,
+          0
+        );
 
         // CSS 변수 설정
         desc.style.setProperty("--single-set-width", `${singleSetWidth}px`);
         desc.style.setProperty(
           "--animation-duration",
-          `${singleSetWidth / 100}s`
+          `${singleSetWidth / 50}s`
         ); // 속도 조절
       });
 
@@ -759,6 +813,33 @@
           });
         });
       });
+
+      // 03. 메인 텍스트 전광판 효과
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   const rows = document.querySelectorAll(".textWrap ul");
+      //   const letterCount = 28; // 각 행의 글자 수
+
+      //   // 컬러만 이동하기 위한 클래스 이동
+      //   function shiftClasses() {
+      //     rows.forEach((row) => {
+      //       const letters = row.querySelectorAll("li");
+      //       const firstClass = letters[0].className;
+
+      //       for (let i = 0; i < letterCount - 1; i++) {
+      //         letters[i].className = letters[i + 1].className;
+      //       }
+
+      //       letters[letterCount - 1].className = firstClass;
+      //     });
+      //   }
+
+      //   function animate() {
+      //     shiftClasses();
+      //   }
+
+      //   // 애니메이션 속도 조절 (여기서는 500ms마다 실행)
+      //   setInterval(animate, 500);
+      // });
     </script>
 
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
